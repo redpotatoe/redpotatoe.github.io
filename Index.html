@@ -1,1 +1,19 @@
-TEST
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>360 Video</title>
+    <meta name="description" content="360 Video — A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <video id="video" src="https://cdn.glitch.com/d5c163f7-0ad2-4e54-b355-9a13cf9e3735%2FVideo1.mp4?1497661755550"
+               autoplay loop crossorigin></video>
+      </a-assets>
+
+      <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+    </a-scene>
+  </body>
+</html>
